@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fractions</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="calculator-container">
+            <h2>Fraction Calculator</h2>
+            <div class="input-section">
+                <input type="number" id="numerator1" placeholder="Numerator 1">
+                <span class="fraction-line">/</span>
+                <input type="number" id="denominator1" placeholder="Denominator 1">
+            </div>
+
+            <div class="operation-section">
+                <select id="operation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+
+            <div class="input-section">
+                <input type="number" id="numerator2" placeholder="Numerator 2">
+                <span class="fraction-line">/</span>
+                <input type="number" id="denominator2" placeholder="Denominator 2">
+            </div>
+            
+            <button onclick="calculateFraction()">Calculate</button>
+            
+            <div class="result-section">
+                <h3>Result:</h3>
+                <p id="result"></p>
+            </div>
+        </div>
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

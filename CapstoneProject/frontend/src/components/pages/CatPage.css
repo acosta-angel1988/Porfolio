@@ -1,0 +1,55 @@
+/* CatPage.css */
+
+.cat-page {
+   width: 199vh;    /* keeps full-page height */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafafa;
+  min-height: 100vh;    /* keeps full-page height */
+}
+
+.cat-page h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+/* Style the search form container */
+.search-filter-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+  justify-content: center;
+  background-color: white;
+}
+
+/* Style inputs and select inside the search form */
+.search-filter-form input[type="text"],
+.search-filter-form select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 150px;
+  flex-grow: 1;
+  max-width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.search-filter-form input[type="text"]:focus,
+.search-filter-form select:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Pet list container */
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+ 
+}

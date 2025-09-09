@@ -1,0 +1,41 @@
+.intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #ddd;
+    padding-top: 80px;
+}
+
+.mainImage {
+    display: flex;
+    border-style: solid;
+    border-color: #ddd;
+    width: 100%;
+    position: relative;
+}
+
+.socialMedia {
+    display: flex;
+    position: relative;
+    width: 13%;
+    background-color: #ddd;
+    margin: auto;
+}
+
+.socialMedia img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socialMedia img:hover {
+  transform: scale(1.1);
+}
+
+.scrollDown {
+  width: 50px;
+  margin: 30px auto 0 auto;
+  display: block;
+}

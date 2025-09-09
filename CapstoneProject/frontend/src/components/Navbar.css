@@ -1,0 +1,111 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff7f50;
+  color: white;
+   padding: 0 40px;   /* increased from 20px */
+}
+
+/* Left side */
+.nav-left {
+  font-size: 24px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+/* Navbar title font */
+.navbarTitle {
+  font-family: 'Tangerine', serif;
+}
+
+/* Right side nav items */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;        /* ensures all items are visible */
+  margin-left: 70px;      /* push nav-right away from the left */
+}
+
+/* Keep links and dropdown from breaking */
+.nav-right a,
+.dropdown {
+  white-space: nowrap;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  position: absolute;
+  top: 100%;                
+  left: 0;                   /* align with button */
+  background-color: orange;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 20;              
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown button hover */
+.dropdown:hover .dropbtn {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Nav link styles */
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-right a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.nav-right a.active {
+  background-color: rgba(255,255,255,0.3);
+}

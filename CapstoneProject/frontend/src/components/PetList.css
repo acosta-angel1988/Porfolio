@@ -1,0 +1,18 @@
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* center the list on the page */
+  background-color: orange;
+}
+
+.no-pets {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 20px 0;
+}

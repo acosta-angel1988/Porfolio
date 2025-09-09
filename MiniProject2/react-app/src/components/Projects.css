@@ -1,0 +1,26 @@
+.projects {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #ddd;
+}
+
+.flex-container {
+  display: flex;
+  gap: 40px; /* space between preview and case */
+  flex-wrap: wrap; /* responsive wrap */
+  margin-top: 30px;
+}
+
+.preview, .case {
+  flex: 1 1 45%; /* flex-grow, flex-shrink, basis */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+.preview h2, .case h2 {
+  margin-top: 0;
+}

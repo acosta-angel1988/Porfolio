@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Audiowide", sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+p {
+  text-align: center;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Dark mode overrides */
+body.dark,
+.app-container.dark {
+  background-color: #121212;
+  color: gold;
+}
+
+body.dark h1,
+.app-container.dark h1 {
+  color: gold; /* lighter blue for headers in dark mode */
+}
+
+body.dark p,
+.app-container.dark p {
+  color: gold;
+}
+

@@ -1,0 +1,16 @@
+.dog-page {
+  width: 199vh;    /* keeps full-page height */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafafa;
+  min-height: 100vh;    /* keeps full-page height */
+
+}
+
+.dog-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+}
+

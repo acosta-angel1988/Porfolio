@@ -1,0 +1,35 @@
+.slideshow2-container {
+  width: 100%;
+  overflow: hidden;       /* hide overflowing track */
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  position: relative;     /* contain absolutely positioned track */
+}
+
+.slideshow2-track {
+  display: flex;
+ 
+  animation: slide 20s linear infinite;
+}
+
+.slide2 {        /* do not shrink or grow */
+
+  margin-right: 10px;
+}
+
+.slide2 img {
+  padding-top: 5%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Continuous scrolling animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* scroll half of duplicated images */
+  }
+}

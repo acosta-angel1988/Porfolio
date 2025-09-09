@@ -1,0 +1,44 @@
+.aboutMe {
+    border-top: solid;
+    border-color: #ddd;
+    border-bottom: solid;
+    
+    color: #ddd;
+    padding: 20px;
+    transition: background-color 0.4s, color 0.4s;
+    
+}
+
+.aboutMe.dark {
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.backgroundInfo, .skills {
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+.aboutMe.dark .backgroundInfo,
+.aboutMe.dark .skills {
+    border: 2px solid gold;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: gold;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.skills li {
+    margin-bottom: 8px;
+}

@@ -1,0 +1,81 @@
+.contact {
+  border-top: solid;
+  border-color: #ddd;
+  padding: 20px 0;
+  color: #ddd;
+  /* Optional gradient background */
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.contact.dark {
+  color: #eee;
+}
+
+form {
+  display: block;
+  border: 2px solid white;
+  padding: 50px;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 320px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.4s, border-color 0.4s;
+}
+
+.contact.dark form {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: #bbb;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px white;
+  transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+  background-color: #fff;
+  color: #000;
+}
+
+.contact.dark input[type="text"],
+.contact.dark input[type="email"],
+.contact.dark textarea {
+  background-color: #222;
+  color: #eee;
+  border-color: #555;
+  box-shadow: none;
+}
+
+textarea {
+  height: 150px; /* smaller height for better UX */
+  resize: vertical;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 2px 2px 5px #0b7dda;
+}
+
+input[type="submit"]:hover {
+  background-color: #0b7dda;
+}
+
+/* Remove .submit width: 30px (too small), use button styling instead if needed */
