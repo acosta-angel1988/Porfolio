@@ -1,0 +1,13 @@
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.search-form input, .search-form select {
+  padding: 8px;
+  flex: 1;
+  min-width: 120px;
+}

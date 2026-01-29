@@ -1,0 +1,25 @@
+.container{
+    background-image: url("/pictures/airportpicture.jpg");
+    background-size: cover;        /* makes it cover the whole area */
+    background-position: center;   /* centers the image */
+    background-repeat: no-repeat;  /* prevents tiling */
+    height: 100vh; 
+
+    display: flex;
+  justify-content: flex-start; /* push content to the left */
+  align-items: center;        /* center vertically */
+  padding-left: 50px;  
+}
+
+.text-overlay {
+    
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-sizing: border-box;
+}

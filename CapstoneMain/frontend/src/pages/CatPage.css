@@ -1,0 +1,65 @@
+/* CatPage.css */
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* can use center for vertical alignment */
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cat-page {
+  padding: 20px;
+  background-color: #fff8f0;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.cat-page h1 {
+  text-align: center;
+  color: #8e44ad;
+  margin-bottom: 20px;
+}
+
+.cat-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cat-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cat-card .cat-info {
+  padding: 15px;
+}
+
+.cat-card .cat-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #6c3483;
+}
+
+.cat-card .cat-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,15 @@
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 20vh;
+  min-width: 200vh;
+  padding: 130px 2px;
+}
+
+.no-pets {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #555;
+}

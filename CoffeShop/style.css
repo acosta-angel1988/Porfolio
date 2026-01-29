@@ -1,0 +1,57 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    margin-bottom: 0.4em;
+}
+
+body{
+    background-color: #F4F1DE;
+    FONT-FAMILY: Arial, sans-serif;
+}
+
+header{
+    background-color: #3B1C0B;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.logo-container{
+    display:inline-block;
+
+}
+
+.logo{
+    height: 50px;
+    margin-right: 20px;
+}
+
+section{
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+.welcome{
+    background-color: #C08552;
+}
+
+.shop .coffee-list{
+    list-style: none;
+}
+
+.about-us{
+    background-color: #C08552;
+}
+
+footer{
+    background-color: #3B1C0B;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

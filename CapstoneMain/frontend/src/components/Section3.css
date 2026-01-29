@@ -1,0 +1,41 @@
+
+.section3 h1 {
+  align-items: center;
+  text-align: center;
+  color: white; /* Sets the text color to white */
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black;    /
+}
+
+.section3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.section3 h2 {
+  align-items: center;
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black; 
+}
+
+.section3 p {
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  text-shadow: 
+    -1px -1px 0 black,  /* Top-left shadow */
+    1px -1px 0 black,   /* Top-right shadow */
+    -1px 1px 0 black,   /* Bottom-left shadow */
+    1px 1px 0 black; 
+  
+}

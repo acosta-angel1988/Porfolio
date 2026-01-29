@@ -1,0 +1,106 @@
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  min-height: 50vh;
+  min-width: 195vh;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Main buttons */
+.home-buttons button,
+.dropbtn {
+  padding: 15px 30px;
+  font-size: 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-buttons button:hover,
+.dropbtn:hover {
+  background: #45a049;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* Dropdown items */
+.dropdown-content button {
+  width: 100%;
+  padding: 12px 15px;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .home-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dropdown-content {
+    top: 50px;
+    left: 0;
+  }
+}
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* can use center for vertical alignment */
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  width: 100%;
+}

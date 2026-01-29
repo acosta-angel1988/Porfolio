@@ -1,0 +1,65 @@
+/* DogPage.css */
+.dog-page {
+  padding: 20px;
+  background-color: #f5f7fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.dog-page h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.dog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dog-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dog-card .dog-info {
+  padding: 15px;
+}
+
+.dog-card .dog-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.dog-card .dog-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* can use center for vertical alignment */
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  width: 100%;
+   
+}

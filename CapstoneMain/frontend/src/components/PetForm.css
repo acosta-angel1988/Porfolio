@@ -1,0 +1,65 @@
+.pet-form-container {
+  min-height: 100vh;
+  min-width: 195vh;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.pet-form-container form {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pet-form-container input,
+.pet-form-container select,
+.pet-form-container button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.Submitbtn{
+  margin-top: 20px;
+}
+
+.preview-list {
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preview-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background: blue;
+}
+
+.preview-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.preview-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.preview-buttons button {
+  padding: 5px 50px;
+  cursor: pointer;
+}
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* can use center for vertical alignment */
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+
+}

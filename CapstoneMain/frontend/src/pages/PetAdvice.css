@@ -1,0 +1,8 @@
+.petadvice {
+  margin: 0 auto;       /* centers content */
+  padding: 20px;
+  background: #fafafa;
+  min-height: 100vh;    /* keeps full-page height */
+  min-width: 195vh;
+  text-align: left;     /* ensures no weird center-shift */
+}

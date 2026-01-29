@@ -1,0 +1,21 @@
+/* Ensure full height for the app */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9; /* default background */
+}
+
+/* Make all buttons consistent */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Links style reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
