@@ -1,111 +1,224 @@
-body{
-     margin: 0;
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   color: white;
-
 }
 
-.wrapper{
-  width: 100%;
-  min-height: 100vh; /* ensures full viewport height */
-  background: linear-gradient(90deg, rgba(2.0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-}
-/* Center the whole top section */
+/* Main Wrapper */
 .wrapper {
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 6, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
-/* Image styling */
-.mainImage {
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  max-width: 90%;
-  margin-top: 20px;
+/* Shared Section Styling */
+.Introduction,
+.AboutMe,
+.Projects,
+.ContactForm {
+  width: 100%;
+  padding: 50px 20px;
 }
 
-/* Introduction section */
-.Introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.Introduction h1 {
-  font-size: 42px;
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: clamp(28px, 5vw, 52px);
   margin-bottom: 20px;
 }
 
-.Introduction p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #ddd;
-  font-style: bold;
+h2 {
+  font-size: clamp(20px, 3vw, 28px);
+  margin-bottom: 15px;
 }
 
-.AboutMe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;     /* Centers the entire section horizontally */ 
+/* Main Image */
+.mainImage {
+  display: block;
+  margin: 20px auto 10px auto;
+  width: min(500px, 90%);
+  height: auto;
 }
 
-
-h1{
-    text-align: center;
-}
-
-.Projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.AboutMe {
+/* Introduction */
+.Introduction {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Vertical center */
-  align-items: center;       /* Horizontal center */
-  min-height: 100vh;         /* Full screen height */
+  align-items: center;
   text-align: center;
 }
 
+.Introduction h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.intro_info {
+  width: 100%;
+  max-width: 900px;
+}
+
+.Introduction p {
+  font-size: clamp(15px, 2vw, 20px);
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* ABOUT ME SECTION */
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+/* Two Column Layout */
 .Description {
+  width: 100%;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  width: 100%;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
+/* Left Column */
 .MeInfo {
-  text-align: left;
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
 }
 
+.MeInfo ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.MeInfo li {
+  margin-bottom: 10px;
+  font-size: clamp(15px, 2vw, 18px);
+}
+
+/* Right Column */
 .Skills_wrapper {
-  text-align: left;
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
 }
 
+/* Skills Grid */
 .skill_List {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
-  max-width: 300px;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .skill_Icon {
-  width: 50px;
-  height: 50px;
+  width: clamp(45px, 5vw, 65px);
+  height: clamp(45px, 5vw, 65px);
+  object-fit: contain;
 }
 
-.Projects{
-    display: flex;
+/* Projects */
+.Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Projects p {
+  max-width: 800px;
+  font-size: clamp(15px, 2vw, 20px);
+  color: #ddd;
+}
+
+/* Contact */
+.ContactForm {
+  text-align: center;
+}
+
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
+
+/* Phones */
+@media (max-width: 600px) {
+
+  .Introduction,
+  .AboutMe,
+  .Projects,
+  .ContactForm {
+    padding: 50px 20px;
+  }
+
+  .Description {
     flex-direction: column;
-    align-items: center;
+    gap: 40px;
+  }
+
+  .mainImage {
+    width: 85%;
+  }
+
 }
 
+/* Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
 
+  .Description {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+}
+
+/* Laptops */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+  .wrapper {
+    padding: 0 30px;
+  }
+
+  .Description {
+    gap: 60px;
+  }
+
+}
+
+/* Large Screens */
+@media (min-width: 1201px) {
+
+  .wrapper {
+    padding: 0 80px;
+  }
+
+  .Description {
+    gap: 100px;
+  }
+
+}

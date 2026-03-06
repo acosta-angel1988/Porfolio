@@ -1,86 +1,80 @@
-/* footer.css */
-
-/* Footer Container */
 .footer {
-  background-color: #1a1a1a; /* dark gray */
-  color: #e0e0e0;
-  padding: 3rem 1rem;
-  font-family: 'Arial', sans-serif;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  padding: 50px 20px 20px;
 }
 
-/* Grid layout */
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-@media (min-width: 768px) {
-  .footer-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.footer-section {
+  flex: 1;
+  min-width: 250px;
 }
 
-/* Section Titles */
 .footer h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
-/* Footer Links */
-.footer ul {
+.footer p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-links {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.footer ul li {
-  margin-bottom: 0.5rem;
+.footer-links li {
+  margin-bottom: 10px;
 }
 
-.footer ul li a {
-  color: #b0b0b0;
+.footer a {
+  color: white;
   text-decoration: none;
-  transition: color 0.3s;
 }
 
-.footer ul li a:hover {
-  color: #ffffff;
+.footer a:hover {
+  color: #00bcd4;
 }
 
-/* Social Icons */
-.footer .social-icons {
+.social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 15px;
+  margin-top: 15px;
 }
 
-.footer .social-icons a {
-  color: #b0b0b0;
-  transition: color 0.3s;
-}
-
-.footer .social-icons a:hover {
-  color: #ffffff;
-}
-
-.footer .social-icons svg {
-  width: 24px;
-  height: 24px;
-}
-
-/* Footer Bottom Text */
-.footer .footer-bottom {
-  margin-top: 2rem;
-  text-align: center;
-  color: #888888;
-  font-size: 0.875rem;
-}
-
-.link_Icon{
+.social-icons img {
   width: 50px;
   height: 50px;
-  display: flex;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }

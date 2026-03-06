@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -5,45 +9,125 @@
   padding: 15px 40px;
   background-color: #111;
   color: white;
-  height: 40px;
-
-  position: sticky; /* or fixed */
+  position: sticky;
   top: 0;
-  z-index: 1000; /* ensures header stays above other content */
+  z-index: 1000;
+  min-height: 80px;
+  width: 100%;
 }
 
-/* Wrap image + text */
+/* Logo */
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px; /* space between pic and text */
+  gap: 12px;
+  text-decoration: none;
+  color: white;
 }
 
-/* Profile picture */
 .MyPicture {
-  height: 90px;
+  height: 55px;
+  width: auto;
   object-fit: cover;
 }
 
-/* Logo text */
 .logo-text {
   font-size: 20px;
   font-weight: 600;
 }
 
-/* Nav styling */
+/* Navigation */
 .nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav a {
   text-decoration: none;
   color: white;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
   color: #00bcd4;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .header {
+    padding: 15px 25px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav ul {
+    gap: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .MyPicture {
+    height: 50px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .header {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-text {
+    font-size: 15px;
+  }
+
+  .nav ul {
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .MyPicture {
+    height: 45px;
+  }
 }

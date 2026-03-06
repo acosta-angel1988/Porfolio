@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 import MainImage from "../assets/Images/MainImage.png";
@@ -19,17 +19,19 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 const Home = () => {
   return (
-    <div className="wrapper">
+    <>
     <Header/>
+    <div className="wrapper">
+    
       {/*Introduction Image*/}
       <div>
         <img src={MainImage} alt="Main" className="mainImage" />
       </div>
       
       {/* Introduction*/}
-      <div className="Introduction">
+      <div className="Introduction" id="home">
         <h1>HELLO, I'M ANGEL ACOSTA</h1>
-        <div class="intro_info">
+        <div className="intro_info">
           <p>  I am a motivated Junior Software Developer with experience in building
           modern, responsive, and scalable web applications. I specialize in
           full-stack development using React, Node.js, and database-driven
@@ -43,18 +45,18 @@ const Home = () => {
       
 
       {/*AbouT Me */}
-      <div className="AboutMe">
+      <div className="AboutMe" id="about">
         <h1>ABOUT ME</h1>
         <div className="Description">
           <div className="MeInfo">
             <h2>Degrees/Certifications</h2>
-            <lu>
+            <ul>
               <li>Security+</li>
               <li>Network+</li>
               <li>Bachelor Computer Science</li>
               <li>Master Network and Security</li>
               <li>Certified Software Engineering Professional(CSEP) </li>
-            </lu>
+            </ul>
           </div>
 
           <div className="Skills_wrapper">
@@ -76,22 +78,24 @@ const Home = () => {
       </div>
 
       {/*Projects*/}
-      <div className="Projects">
+      <div className="Projects" id="projects">
         <h1>PROJECTS</h1>
         <p>Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
         <h2>Coming Soon!</h2>
       </div>
 
       {/*Contact Us*/}
-      <div className="ContactForm">
+      <div className="ContactForm" id="contact">
         <h1>CONTACT US</h1>
       </div>
       <ContactUs/>
   
       {/*Footer*/}
-      <Footer/>
+      
     
     </div>
+    <Footer/>
+    </>
   );
 };
 
