@@ -1,0 +1,111 @@
+body{
+     margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: white;
+
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh; /* ensures full viewport height */
+  background: linear-gradient(90deg, rgba(2.0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+/* Center the whole top section */
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Image styling */
+.mainImage {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 90%;
+  margin-top: 20px;
+}
+
+/* Introduction section */
+.Introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Introduction h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.Introduction p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+  font-style: bold;
+}
+
+.AboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centers the entire section horizontally */ 
+}
+
+
+h1{
+    text-align: center;
+}
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.AboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertical center */
+  align-items: center;       /* Horizontal center */
+  min-height: 100vh;         /* Full screen height */
+  text-align: center;
+}
+
+.Description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.MeInfo {
+  text-align: left;
+}
+
+.Skills_wrapper {
+  text-align: left;
+}
+
+.skill_List {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 300px;
+}
+
+.skill_Icon {
+  width: 50px;
+  height: 50px;
+}
+
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

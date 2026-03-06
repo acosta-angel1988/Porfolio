@@ -1,0 +1,29 @@
+form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    border-style: solid;
+}
+input[type=submit]{
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+
+    
+}
+
+label {
+    display: block;
+
+}
+
+input{
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+}

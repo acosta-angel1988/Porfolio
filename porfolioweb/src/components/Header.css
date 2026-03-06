@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #111;
+  color: white;
+  height: 40px;
+
+  position: sticky; /* or fixed */
+  top: 0;
+  z-index: 1000; /* ensures header stays above other content */
+}
+
+/* Wrap image + text */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between pic and text */
+}
+
+/* Profile picture */
+.MyPicture {
+  height: 90px;
+  object-fit: cover;
+}
+
+/* Logo text */
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Nav styling */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #00bcd4;
+}
